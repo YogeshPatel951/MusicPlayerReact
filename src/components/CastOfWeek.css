@@ -1,0 +1,63 @@
+.eplist{
+    font-size: xx-large;
+    margin-right    : auto   ;
+
+    
+}
+@media(max-width:1000px){
+    .week{
+        width: 170px;
+        padding-left: 15px;
+        height: 160px;
+    }   
+    .eplist{
+        padding-left: 0px;
+        padding-right: 2px;
+        font-size: 14px;
+    }
+    .red{
+        width: 20px;
+    }
+    .time{
+        padding-left: 20px;
+        margin-left: 25px;
+    }
+    .ep{
+        height: 400px;
+    }
+    .widset{
+        height: 150px;
+        overflow-y: auto;   
+    }
+}
+@media(min-width:1001px){
+    .week{
+        width: 400px;
+        margin-left: 150px;
+        height:400px;
+    }
+    .eplist{
+        padding-left: 30%;
+        padding-top:20px ;
+
+        
+    }
+    .ep{
+        height: 400px;
+    }
+    
+    .time{
+        padding-left: 35px;
+        margin-left: 30px;
+    }
+    .widset{
+    
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    overflow-y: auto;
+}
+}
+.ep::-webkit-scrollbar{
+    display: none;
+}

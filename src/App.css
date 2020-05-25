@@ -1,0 +1,291 @@
+.buttonWrap{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.items{
+    display:flex;
+    overflow-x: auto;
+}
+.items::-webkit-scrollbar{
+    display: none;
+}
+.large{
+  font-size: xx-large;
+}
+.wid{
+  height: 100%;
+   background-color: rgb(29, 19, 19);
+   position: fixed;
+   width: 100%;
+   overflow-x: hidden;
+ 
+}
+.wid::-webkit-scrollbar{
+  display: none;
+}
+.White{
+  color: white;
+}
+.red{
+  color: red;
+  background-color: red ;
+}
+.roundback{
+  background-color: rgba(56, 61, 61, 0.54);
+  width: 30%;
+  height: 80px;
+  margin: auto;
+  border-radius: 10px;
+}
+.accrow{
+  padding-left: 50px;  
+}
+.accrowup{
+  padding-top: 15px;
+}
+
+.fsize{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2PX;
+  word-spacing: 2px;
+}
+.roundAcc{
+  width: 250px;
+  height: 40px;
+  border-radius: 0 125px 125px 0;
+  text-align: center;
+  align-self: center;
+   background-color:rgb(204, 181, 181);
+}
+
+.cancelButton{
+  margin-top: 50px !important;
+  background-color: rgba(214, 32, 32, 0.938) !important;
+  width: 30%;
+  margin: auto;
+  border-radius: 600px !important;
+  margin-bottom: 50px !important;
+}
+@media(max-width:1045px){
+
+  
+  .alertmsg{
+  padding:10px;
+  background-color: green;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  margin-bottom: 2%;
+  width: 80% !important;
+}
+.closeIcon{
+  margin-left: auto;
+  margin-right: 0%;
+  float: right;
+  margin-top: 0% !important;
+  padding-top: 0% !important;
+  margin-bottom: 0% !important;
+  padding-bottom: 0% !important;
+  font-size: 30px !important;
+ 
+  color: white !important; 
+
+}
+.alertTitle{
+  margin: auto;
+  margin-top: 4% !important;
+  text-align: center;
+  padding-top: 0% !important;
+  margin-left: 10%;
+}
+.message{
+  margin-top: 0% !important;
+  padding-top: 0% !important;
+ 
+  float: left;
+  
+  
+  font-size: larger;
+
+}
+.alertIcon{
+  margin-bottom: 0% !important;
+  padding-bottom: 0% !important;
+  width: 10%;
+ 
+  
+}
+  .roundAcc{
+    width: 40% !important;
+  }
+  .fsize{
+    font-size: 15px !important;
+  }
+  .roundback{
+    margin: auto;
+    width: 80%;
+  }
+  .detail{
+    font-size: small;
+  }
+  .cancelButton{
+    width: 80%;
+    margin-top: 35px !important;
+    margin-bottom: 10px !important;
+  }
+ 
+  .subCenter{
+  margin: auto;
+  margin-top: 55% !important;
+  width: 80% !important;
+}
+.subText{
+  margin: auto;
+  margin-top: 2%;
+  background-color:rgba(80, 72, 72, 0.623);
+  width: 80% !important;
+  border-radius: 10px;
+}
+}
+@media(min-width:359px) and (max-width:370px){
+
+
+    .subCenter{
+  margin: auto;
+  margin-top: 90% !important;
+  width: 80% !important;
+}
+.subText{
+  margin: auto;
+  margin-top: 2%;
+  background-color:rgba(80, 72, 72, 0.623);
+  width: 80% !important;
+  border-radius: 10px;
+}
+}@media(min-width:372px) and (max-width:450px){
+  
+.subCenter{
+  margin-top: 350px !important;
+  width: 300px !important;
+
+}
+.subText{
+  width: 300px !important;
+}
+
+}
+
+html{
+  height: 100%;
+  margin: 0;
+}
+body{
+  min-height: 100%;
+  
+}
+.backimage{
+ 
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-image: url(./components/subscibtion.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto;
+
+}
+.subCenter{
+  margin: auto;
+  margin-top: 20%;
+}
+.backSub{
+  background-color: rgb(240, 44, 44) !important;
+  border-radius: 25px;
+  width: 20%;
+  text-align: center;
+}
+.subText{
+  margin: auto;
+  margin-top: 1%;
+    background-color:rgba(80, 72, 72, 0.623);
+  
+    width: 20%;
+    border-radius: 10px;
+    
+}
+.subTextSize{
+  font-size: 18px;
+  padding-top: 10px ;
+  padding-left: 40px;
+}
+.subDesc{
+  padding-bottom: 10px;
+   padding-left: 40px;
+   font-size: 15px;
+}
+.forShadow{
+  box-shadow:  25px 25px 0 0 !important ;
+
+  background-color: rgb(34, 36, 36);
+  margin-top: 18%;
+ 
+}
+.backimage::-webkit-scrollbar{
+  display: none;
+}
+@media (min-width:1050px){
+ 
+.alertmsg{
+  padding:10px;
+  background-color: green;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  margin-bottom: 2%;
+  width: 40% !important;
+}
+
+
+.closeIcon{
+  margin-left: auto;
+  margin-right: 0%;
+  float: right;
+  margin-top: 0% !important;
+  padding-top: 0% !important;
+  margin-bottom: 0% !important;
+  padding-bottom: 0% !important;
+  font-size: 20px !important;
+ 
+  color: white !important; 
+
+}
+.alertTitle{
+  margin: auto;
+  margin-top: 1% !important;
+  text-align: center;
+  padding-top: 0% !important;
+  margin-left: 10%;
+}
+.message{
+  margin-top: 0% !important;
+  padding-top: 0% !important;
+ 
+  float: left;
+  
+  
+  font-size: 25px;
+
+}
+.alertIcon{
+  margin-bottom: 4% !important;
+  padding-bottom: 0% !important;
+  width: 10%;
+ }
+}
+
