@@ -13,6 +13,7 @@ import podcast from './podcast';
 import MList from './data.json'
 import bg from "./components/Background.png";
 function App() {
+  const[podClicked,setPodClicked]=useState(0);
   /*  function getPage() {
      const route = window.location.pathname;
      if (route == "/Myaccount") return <MyAccount/;
@@ -27,6 +28,11 @@ function App() {
     keyToPass = key;
     console.log(keyToPass)
   }
+  let isClicked=0
+  function passPodCastIsClicked(isClick){
+   setPodClicked(isClick)
+   console.log(window.location.pathname)
+  }
 
 
   return (
@@ -38,10 +44,13 @@ function App() {
         <Route path="/Myaccount" component={MyAccount} />
         <Route path="/Subscribe" component={Subscription} />
         <Route path="/Podcast"
-          render={(props) => <PodcastDetail {...props} keyToPass={keyToPass} data={MList} />} />
+          render={(props) => <PodcastDetail {...props} keyToPass={keyToPass} data={MList} passisClicked={passPodCastIsClicked} />} />
       </div >
     </Router>
-    <Player />
+    {window.location.pathname!='/Subscribe'?(
+      <Player isClicked={podClicked} />
+    ):<></>
+    }
     </>
   );
 }

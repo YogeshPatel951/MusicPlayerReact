@@ -74,7 +74,7 @@ body {
     height: 40px;
     border-radius: 0 125px 125px 0;
     text-align: center;
-    align-self: center;
+    
     background-color: rgb(204, 181, 181);
 }
 
@@ -82,6 +82,7 @@ body {
     margin-top: 50px !important;
     background-color: rgba(214, 32, 32, 0.938) !important;
     width: 30%;
+   height: 50px;
     margin: auto;
     border-radius: 600px !important;
     margin-bottom: 50px !important;
@@ -130,7 +131,7 @@ body {
         width: 40% !important;
     }
     .fsize {
-        font-size: 15px !important;
+        font-size: 18px !important;
     }
     .roundback {
         margin: auto;
@@ -158,10 +159,10 @@ body {
     }
 }
 
-@media(min-width:359px) and (max-width:370px) {
+@media(min-width:319px) and (max-width:370px) {
     .subCenter {
         margin: auto;
-        margin-top: 90% !important;
+        margin-top: 65% !important;
         width: 80% !important;
     }
     .subText {
@@ -173,7 +174,7 @@ body {
     }
 }
 
-@media(min-width:372px) and (max-width:450px) {
+@media(min-width:372px) and (max-width:380px) {
     .subCenter {
         margin-top: 350px !important;
         width: 300px !important;
@@ -181,8 +182,17 @@ body {
     .subText {
         width: 300px !important;
     }
+   
 }
-
+@media(min-width:400px) and (max-width:470px) {
+    .subCenter {
+        margin-top: 320px !important;
+        width: 300px !important;
+    }
+    .subText {
+        width: 300px !important;
+    }
+}
 html {
     height: 100%;
     margin: 0;
@@ -284,4 +294,30 @@ body {
         padding-bottom: 0% !important;
         width: 10%;
     }
+    .subCenter{
+        margin-top: 200px !important;
+    }
+}
+@media(max-width:362px){
+    .accBlock{
+        height: 70px;
+        padding-top: 0px;
+    }
+    .cancelButton{
+        height: 40px;
+        margin-top: 20px !important;
+    }
+}
+@media(min-width:365px) and (max-width:386px){
+    .accBlock{
+        height: 100px;
+        padding-top: 10px;
+    }
+    .cancelButton{
+        height: 50px;
+      
+    }
+}
+.myAcc{
+    margin-top: 100px !important;
 }

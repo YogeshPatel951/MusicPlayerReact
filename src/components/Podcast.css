@@ -6,8 +6,9 @@
     }
    
     .description{
-      width: 90% !important;
-       margin-left: 6% !important;
+      width: 100% !important;
+      margin-right: 4% !important;
+      
     } 
     .img-wrap {
         width: 100% !important;

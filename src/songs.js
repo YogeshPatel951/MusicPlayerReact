@@ -1,5 +1,11 @@
 export default [
     {
+        artistname: "DASK",
+        image: "/images/pure.jpg",
+        title: "Pure",
+        src: "/audio/Pure.mp3"
+    },
+    {   
         artistname: "Dee Yan-Key",
         image: "/images/butterflies.jpg",
         title: "Butterflies",
@@ -17,4 +23,5 @@ export default [
         title: "Pure",
         src: "/audio/Pure.mp3"
     }
+   
 ]

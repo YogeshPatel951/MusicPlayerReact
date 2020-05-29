@@ -11,11 +11,13 @@ const Home = (props) => {
   const [alertStatus, SetalertStatus] = useState(true);
   const [warning, Setwarning] = useState(false);
   const [gotKey, setgotKey] = useState(0);
+  
   function CloseAlert() {
     SetalertStatus(false);
   }
   function passData(key) {
     props.passPodCastData(key)
+    
   }
   return (
     <div className="wid">
@@ -46,7 +48,7 @@ const Home = (props) => {
               </>
             )}
         </Container>) : ""}
-      <div className="pl-3 pb-3  h2 White">Top Trending Podcast</div>
+      <div className="pl-3 pb-3  h4 White">TOP TRENDING PODCAST</div>
       <div className="d-flex items" key="1" >
         <Link to="/podcast">
           <div className="d-flex flex-row">
