@@ -11,23 +11,26 @@ const NaviBar = () => {
       <Navbar.Brand >
         <Link to="/">
           <img
-            src="images/a.png"
-            width="40"
-            height="40"
+            src="images/Rectangle.png"
+            width="30"
+            height="30"
             className="d-inline-block align-top rounded"
             alt="GameCast Logo"
-          /></Link>{' '}
-        <span className="h2 White">GameCasts</span>
+            style={{padding:"1px",marginTop:"5px"}}
+          />
+          </Link>{' '}
+        <span className="h3 White">GAMECASTS</span>
 
       </Navbar.Brand>
 
       <Nav className="ml-auto">
         <Link to="/Myaccount">
           <img
-            src='images/a.png'
-            width="40"
-            height="40"
-            className="rounded-circle" />
+            src='images/Contactsicon.png'
+            width="30"
+            height="30"
+            className="rounded-circle" 
+            />
         </Link>
       </Nav>
 

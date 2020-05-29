@@ -30,7 +30,9 @@ class PodcastDetail extends Component {
     return (
       <>
         <div className="d-flex flex-column overFlowoff" style={{ backgroundImage: `url(${this.image}`, backgroundRepeat: "none", backgroundSize: "cover", margin: "0", padding: "0" }}>
-
+          <Link to="/">
+        <i className="far fa-arrow-alt-circle-left mt-4 mb-5 ml-4 p-0" style={{color:"white",backgroundColor:"#000",borderRadius:"100%",position:"absolute",zIndex:"10000",fontSize:"2rem"}}></i>
+        </Link>
           <div className="img-wrap">
             {/* <img src={this.image} className="img-fluid" style={{width:"100%"}}></img> */}
             <img src={this.image} className="img-fluid" ></img>
@@ -67,11 +69,16 @@ class PodcastDetail extends Component {
 
               <div className="d-flex flex-column forMobile ">
                 <div className="ml-4 mt-2 heading"> Episodes</div>
+                
+
                 {this.episodes.map(episode => (
                   <div className="White secondEpi" >
+                    <i className="far fa-play-circle ml-3 mt-3 mr-5" style={{fontSize:"1.5rem",color:"red",position:"absolute"}} ></i>
+                    <div className="ml-4">
                     <div className=" Epititle ">{episode.titlle}</div>
                     <div className=" date" >{episode.addedOn}</div>
                     <div className=" duration">{episode.duration}</div>
+                    </div>
                   </div>
                 ))}
 

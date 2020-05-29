@@ -163,7 +163,7 @@ class Player extends Component {
     render() {
         return (
             <>
-                <div id="player" className="container-fluid">
+                <div id="player" className="container-fluid mb-0 pb-0">
                     <div className="d-flex" style={{ marginBottom: "0.1rem ", marginTop: "0rem" }}>
                         <input className="he" type="range" defaultValue="0" value={this.state.progressbar != NaN ? this.state.progressbar : 0} onChange={this.handleChange} id="formControlRange" style={{ top: "0px" }} />
 
@@ -179,7 +179,7 @@ class Player extends Component {
                             </div>
                         </div>
                         <div className="col-xs-3 ali" style={{ textAlign: "right" }} onClick={this.PlayOrPause}>
-                            <i className={this.state.isplaying ? "fas fa-pause-circle" : "fas fa-play-circle"} style={{ fontSize: "2.9rem", marginTop: "0.1rem", marginRight: "10px", color: "red", overflow: "hidden" }}></i>
+                            <i className={this.state.isplaying ? "fas fa-pause-circle" : "fas fa-play-circle"} style={{ fontSize: "2.9rem", marginTop: "0.1rem", marginRight: "10px", color: "red",borderRadius:"100%", overflow: "hidden" , backgroundColor:"#fff"}}></i>
                         </div>
                     </div>
                 </div>

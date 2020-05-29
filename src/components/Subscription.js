@@ -2,10 +2,10 @@ import React from 'react'
 import NavBar from './NavBar'
 const Subscription = () => {
   return (
-    <div className="backimage">
+    <div className="backimage" style={{boxShadow:"inset 0 100px 70px #000"}}>
       <NavBar />
       <div className="d-flex flex-column  ">
-        <div className=" subCenter backSub">
+        <div className=" subCenter backSub mb-3">
           <button className="btn " type="button"><span className="White">SUBSCRIBE NOW</span></button>
         </div>
         <div className="White subText">
