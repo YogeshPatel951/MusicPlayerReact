@@ -11,7 +11,7 @@ import Home from './components/Home'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import podcast from './podcast';
 import MList from './data.json'
-
+import bg from "./components/Background.png";
 function App() {
   /*  function getPage() {
      const route = window.location.pathname;
@@ -27,7 +27,10 @@ function App() {
     keyToPass = key;
     console.log(keyToPass)
   }
+
+
   return (
+    <>
     <Router>
       <div className="wid">
         <Route path="/" exact
@@ -36,9 +39,10 @@ function App() {
         <Route path="/Subscribe" component={Subscription} />
         <Route path="/Podcast"
           render={(props) => <PodcastDetail {...props} keyToPass={keyToPass} data={MList} />} />
-        <Player />
       </div >
     </Router>
+    <Player />
+    </>
   );
 }
 export default App;

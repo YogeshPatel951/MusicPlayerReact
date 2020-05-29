@@ -21,8 +21,8 @@ const Home = (props) => {
     <div className="wid">
       <Navbar />
       {alertStatus == true ? (
-        <Container className="alertmsg  " style={{ backgroundColor: warning ? "rgb(255,50,12)" : "aqua" }}>
-          <button className="btn closeIcon" onClick={CloseAlert}>X</button>
+        <Container className="alertmsg  " style={{ backgroundColor: warning ? "rgba(255,50,12,0.5)" : "aqua" }}>
+          <button className="btn closeIcon" onClick={CloseAlert}><i class="fas fa-times"></i></button>
           {warning ? (
             <>
               <div className=' alertTitle h3'>WARNING</div>
@@ -37,7 +37,8 @@ const Home = (props) => {
               <>
                 <div className=' alertTitle h3'>SUCCESS</div>
                 <div className="d-flex flex-row">
-                  <div className="alertIcon   h2">Y</div>
+                <i className="far fa-check-square h1 mr-5 ml-2 mt-4 alertIcon" style={{fontSize:"3.5rem"}}></i>
+                
                   <Col>
                     <div className="message "> Success husduif usd fusuif iud gs fiu sad asda as das ds ad ad sa ds gf</div>
                   </Col>
@@ -55,7 +56,18 @@ const Home = (props) => {
           </div>
         </Link>
       </div>
-      <CastofWeek data={CastOfWeekData} />
+      <CastofWeek data={CastOfWeekData} passData={passData}/>
+
+      <div className="pl-3 pb-3  h2 White">Gamer's Top Choice</div>
+      <div className="d-flex items pb-5 mb-5" key="1" >
+        <Link to="/podcast">
+          <div className="d-flex flex-row">
+            {MList.map(data => (<Col xs={2} className="" data-id={data.id}> <MusicCard data={data} passData={passData} />
+            </Col>))
+            }
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }
