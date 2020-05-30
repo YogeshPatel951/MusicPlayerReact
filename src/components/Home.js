@@ -23,32 +23,32 @@ const Home = (props) => {
     <div className="wid">
       <Navbar />
       {alertStatus == true ? (
-        <Container className="alertmsg  " style={{ backgroundColor: warning ? "rgba(255,50,12,0.5)" : "aqua" }}>
+        <Container className="alertmsg mt-1 mb-4" style={{ backgroundColor: warning ? "rgba(255,50,12,0.5)" : "aqua" }}>
           <button className="btn closeIcon" onClick={CloseAlert}><i class="fas fa-times"></i></button>
           {warning ? (
             <>
-              <div className=' alertTitle h3'>WARNING</div>
+              <div className=' alertTitle h3' style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"300"}}>WARNING</div>
               <div className="d-flex flex-row">
                 <div className="alertIcon   h2">!</div>
                 <Col>
-                  <div className="message "> Warning husduif usd fusuif iud gs fiu sad asda as das ds ad ad sa ds gf</div>
+                  <div className="message "> Warning husduif usd fusuif iud fiu sad asda as das ds ad ad sa ds gf</div>
                 </Col>
               </div>
             </>
           ) : (
               <>
-                <div className=' alertTitle h3'>SUCCESS</div>
+                <div className=' alertTitle h3' style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"400"}}>SUCCESS</div>
                 <div className="d-flex flex-row">
                 <i className="far fa-check-square h1 mr-5 ml-2 mt-4 alertIcon" style={{fontSize:"3.5rem"}}></i>
                 
                   <Col>
-                    <div className="message "> Success husduif usd fusuif iud gs fiu sad asda as das ds ad ad sa ds gf</div>
+                    <div className="message "> Success husduif usd fusuif iud fiu sad asda as das ds ad ad sa ds gf</div>
                   </Col>
                 </div>
               </>
             )}
         </Container>) : ""}
-      <div className="pl-3 pb-3  h4 White">TOP TRENDING PODCAST</div>
+      <div className="pl-3 pb-2  h4 White" style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"200"}}>TOP TRENDING PODCAST</div>
       <div className="d-flex items" key="1" >
         <Link to="/podcast">
           <div className="d-flex flex-row">
@@ -60,7 +60,7 @@ const Home = (props) => {
       </div>
       <CastofWeek data={CastOfWeekData} passData={passData}/>
 
-      <div className="pl-3 pb-3  h2 White">Gamer's Top Choice</div>
+      <div className="pl-3 pb-3  h2 White" style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"200"}}>Gamer's Top Choice</div>
       <div className="d-flex items pb-5 mb-5" key="1" >
         <Link to="/podcast">
           <div className="d-flex flex-row">

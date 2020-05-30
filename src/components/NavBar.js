@@ -12,14 +12,16 @@ const NaviBar = () => {
         <Link to="/">
           <img
             src="images/Rectangle.png"
-            width="30"
-            height="30"
+            width="35"
+            height="35"
             className="d-inline-block align-top rounded"
             alt="GameCast Logo"
             style={{padding:"1px",marginTop:"5px"}}
           />
           </Link>{' '}
-        <span className="h3 White">GAMECASTS</span>
+          <div style={{display:"inline-block"}} class="pt-1 mt-1">
+        <span className="h3 pt-5 mt-5 White" style={{fontFamily:"Poppins"}}>GAMECASTS</span>
+        </div>
 
       </Navbar.Brand>
 
