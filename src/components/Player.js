@@ -6,7 +6,7 @@ class Player extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            /*  isPodClicked:this.props.isClicked,*/
+            /*  isPodClicked:this.props.isClickedId,*/
             currentIndex: 0,
             currentTitle: '',
             currentArtist: '',
@@ -163,7 +163,6 @@ class Player extends Component {
 
     }
      componentDidUpdate(prevProps,prevState){
-        
         if(prevProps.isClicked!==this.props.isClicked){
             this.setState({currentIndex: this.props.isClicked})
             console.log(this.state.currentIndex)
@@ -172,14 +171,9 @@ class Player extends Component {
                     this.player.play();
                     this.setState({ isplaying: true })
                 }
-            if(this.state.isplaying===true){
-                this.convertTime(1)
-                this.setState({ progressbar: 0 })
                 
             }
-
-            }
-        } 
+        }
 
     render() {
         return (
