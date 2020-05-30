@@ -23,15 +23,11 @@ function App() {
    } */
   let keyToPass = ""
   function passPodCastData(key) {
-    console.log("podCastData")
-    console.log(key)
     keyToPass = key;
-    console.log(keyToPass)
   }
   let isClicked=0
   function passPodCastIsClicked(isClick){
    setPodClicked(isClick)
-   console.log(window.location.pathname)
   }
 
 
@@ -44,7 +40,7 @@ function App() {
         <Route path="/Myaccount" component={MyAccount} />
         <Route path="/Subscribe" component={Subscription} />
         <Route path="/Podcast"
-          render={(props) => <PodcastDetail {...props} keyToPass={keyToPass} data={MList} passisClicked={passPodCastIsClicked} />} />
+          render={(props) => <PodcastDetail {...props} keyToPass={keyToPass} data={MList} passisClicked={passPodCastIsClicked}/>} />
       </div >
     </Router>
     {window.location.pathname!='/Subscribe'?(

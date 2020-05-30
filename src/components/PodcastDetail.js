@@ -8,8 +8,10 @@ class PodcastDetail extends Component {
     super(props);
     this.state = {
       podcastID: this.props.keyToPass,
-      isC:true
-    }
+      playIcon:0,
+      changeIcon:false
+      
+    };
 
     podcasts.forEach(element => {
       if (element.podcastID == this.state.podcastID) {
@@ -20,8 +22,16 @@ class PodcastDetail extends Component {
       }
 
     });
+   
 
     this.svg = '<svg width="375px" height="170px" viewBox="0 0 375 170" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><desc>Created with Lunacy</desc><defs><linearGradient x1="0.5" y1="0" x2="0.5" y2="0.981396437" id="gradient_1"><stop offset="0" stop-color="#2C2939" stop-opacity="0" /><stop offset="0.496267021" stop-color="#2C2939" stop-opacity="0.721568644" /><stop offset="1" stop-color="#2C2939" /></linearGradient></defs><path d="M0 0L375 0L375 170L0 170L0 0Z" id="Shadow" fill="url(#gradient_1)" stroke="none" /></svg>'
+
+  }
+  isClicked=(id)=>{
+   this.props.passisClicked(id)
+   this.setState({changeIcon:true})
+   this.setState({playIcon:id})
+
 
   }
 
@@ -67,8 +77,9 @@ class PodcastDetail extends Component {
               <div className="d-flex flex-column forMobile ">
                 <div className="ml-4 mt-2 heading"> Episodes</div>
                 {this.episodes.map(episode => (
-                  <div className="White secondEpi" data-id={episode.id}  onClick={(e)=> this.props.passisClicked(e.currentTarget.dataset.id)}>
-                    <i className="far fa-play-circle ml-3 mt-3 mr-5" style={{fontSize:"1.5rem",color:"red",position:"absolute"}} ></i>
+                  <div className="White secondEpi" data-id={episode.id} id={episode.id}  onClick={(e)=> this.isClicked(e.currentTarget.dataset.id) }>
+                    {this.state.changeIcon && (this.state.playIcon===document.getElementById(episode.id).getAttribute('data-id'))  ?( <i class="far fa-pause-circle ml-3 mt-3 mr-5" style={{fontSize:"1.5rem",color:"red",position:"absolute"}}></i> )
+                    :( <i className="far fa-play-circle ml-3 mt-3 mr-5" style={{fontSize:"1.5rem",color:"red",position:"absolute"}} ></i>)}
                     <div className="ml-4" >
                     <div className=" Epititle ">{episode.titlle}</div>
                     <div className=" date" >{episode.addedOn}</div>
