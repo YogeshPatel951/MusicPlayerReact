@@ -1,3 +1,4 @@
+
 .eplist{
     font-size: xx-large;
     margin-right    : auto   ;
@@ -8,12 +9,14 @@
     .week{
         width: 170px;
         padding-left: 15px;
-        height: 160px;
+        height: 180px;
     }   
     .eplist{
         padding-left: 0px;
         padding-right: 2px;
-        font-size: 14px;
+        font-size: 15px;
+        
+        margin-top: 0px !important;
     }
     .red{
         width: 20px;
@@ -26,8 +29,11 @@
         height: 400px;
     }
     .widset{
-        height: 150px;
-        overflow-y: auto;   
+        height: 100px;
+          
+    }
+    .hei{
+        
     }
 }
 @media(min-width:1001px){
@@ -55,9 +61,12 @@
     width: 80%;
     margin: auto;
     height: 400px;
-    overflow-y: auto;
+    
 }
 }
 .ep::-webkit-scrollbar{
     display: none;
+}
+.myAcc{
+    padding-top: 100px !important;
 }

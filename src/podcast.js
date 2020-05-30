@@ -5,17 +5,17 @@ export default [
         image: "/images/unclocked.png",
         description: "Butterflies",
         episodes: [
-            {
+            {   id:1,
                 titlle: "Epidose 148",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:2,
                 titlle: "Epidose 149",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:3,
                 titlle: "Epidose 150",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
@@ -28,17 +28,17 @@ export default [
         image: "/images/minecraft.png",
         description: "Butterflies",
         episodes: [
-            {
+            {   id:1,
                 titlle: "Epidose 148",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:2,
                 titlle: "Epidose 149",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:3,
                 titlle: "Epidose 150",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
@@ -51,17 +51,17 @@ export default [
         image: "/images/whatsGood.png",
         description: "Butterflies",
         episodes: [
-            {
+            {   id:1,
                 titlle: "Epidose 148",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:2,
                 titlle: "Epidose 149",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:3,
                 titlle: "Epidose 150",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
@@ -74,17 +74,17 @@ export default [
         image: "/images/a.png",
         description: "Butterflies",
         episodes: [
-            {
+            {   id:1,
                 titlle: "Epidose 148",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:2,
                 titlle: "Epidose 149",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:3,
                 titlle: "Epidose 150",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
@@ -97,17 +97,17 @@ export default [
         image: "/images/a.png",
         description: "Butterflies",
         episodes: [
-            {
+            {   id:1,
                 titlle: "Epidose 148",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:2,
                 titlle: "Epidose 149",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"
             },
-            {
+            {   id:3,
                 titlle: "Epidose 150",
                 addedOn: "added 2 days ago",
                 duration: "1:42:00"

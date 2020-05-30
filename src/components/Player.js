@@ -6,11 +6,12 @@ class Player extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            /*  isPodClicked:this.props.isClicked,*/
             currentIndex: 0,
             currentTitle: '',
             currentArtist: '',
             currentImage: '',
-            isplaying: false,
+            isplaying:false,
             progressbar: 0,
             volumebar: 100,
             volumeup: true,
@@ -19,6 +20,8 @@ class Player extends Component {
             loop: false,
             shuffle: false
         }
+     
+        console.log("hsgd")
         this.history = [];
         this.player = new Audio();
         this.startPlayer = this.startPlayer.bind(this);
@@ -32,7 +35,7 @@ class Player extends Component {
         this.toggleShuffle = this.toggleShuffle.bind(this);
     }
     startPlayer() {
-        const currentSong = songlist[this.state.currentIndex];
+        const currentSong = songlist[this.props.isClicked];
         this.player.src = currentSong.src;
         this.setState({
             currentTitle: currentSong.title,
@@ -42,6 +45,8 @@ class Player extends Component {
         })
         //this.player.play();
     }
+   
+       
     PlayOrPause() {
         if (this.player.paused) {
             this.player.play();
@@ -148,17 +153,33 @@ class Player extends Component {
     }
 
     handleChange = (event) => {
-        if (event.target.value != NaN) {
+        if (event.target.value !== NaN) {
             console.log(event.target.value)
             this.setState({ progressbar: event.target.value })
             this.player.currentTime = (event.target.value / 100 * this.player.duration)
         }
         else {
-            this.setState({ progressbar: 0 })
-        }
+            this.setState({ progressbar: 0 })        }
 
     }
+     componentDidUpdate(prevProps,prevState){
+        
+        if(prevProps.isClicked!==this.props.isClicked){
+            this.setState({currentIndex: this.props.isClicked})
+            console.log(this.state.currentIndex)
+            this.startPlayer()
+            if (this.player.paused) {
+                    this.player.play();
+                    this.setState({ isplaying: true })
+                }
+            if(this.state.isplaying===true){
+                this.convertTime(1)
+                this.setState({ progressbar: 0 })
+                
+            }
 
+            }
+        } 
 
     render() {
         return (

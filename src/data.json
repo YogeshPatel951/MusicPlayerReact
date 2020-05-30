@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Gaming Unlocked",
         "image": "/images/unclocked.png",
-        "description": "Uda",
+        "description": "IGN",
         "episodes": [
             "fasdsd",
             "Asdad",
@@ -14,7 +14,7 @@
         "id": 2,
         "name": "Minecraft Me-Sd Video",
         "image": "/images/minecraft.png",
-        "description": "Uda",
+        "description": "GekGamer.com",
         "episodes": [
             "fasdsd",
             "Asdad",
@@ -23,9 +23,9 @@
     },
     {
         "id": 3,
-        "name": "What's Good",
+        "name": "What's Good Games",
         "image": "/images/whatsGood.png",
-        "description": "Uda",
+        "description": "GameGeeKTV.com",
         "episodes": [
             "fasdsd",
             "Asdad",
@@ -34,7 +34,7 @@
     },
     {
         "id": 4,
-        "name": "First",
+        "name": "What's Good Games",
         "image": "/images/a.png",
         "description": "Uda",
         "episodes": [
@@ -45,9 +45,9 @@
     },
     {
         "id": 5,
-        "name": "First",
+        "name": "What's Good Games",
         "image": "/images/a.png",
-        "description": "Uda",
+        "description": "Udasad",
         "episodes": [
             "fasdsd",
             "Asdad",
@@ -56,7 +56,7 @@
     },
     {
         "id": 6,
-        "name": "First",
+        "name": "What's Good Games",
         "image": "/images/a.png",
         "description": "Uda",
         "episodes": [
@@ -67,7 +67,7 @@
     },
     {
         "id": 7,
-        "name": "First",
+        "name": "What's Good Games",
         "image": "/images/a.png",
         "description": "Uda",
         "episodes": [
@@ -78,7 +78,7 @@
     },
     {
         "id": 8,
-        "name": "First",
+        "name": "What's Good Games",
         "image": "/images/a.png",
         "description": "Uda",
         "episodes": [

@@ -8,6 +8,7 @@ class PodcastDetail extends Component {
     super(props);
     this.state = {
       podcastID: this.props.keyToPass,
+      isC:true
     }
 
     podcasts.forEach(element => {
@@ -40,7 +41,7 @@ class PodcastDetail extends Component {
 
           <div className="shadow">
             <div className="down">
-              <div className="description ml-5 mr-4">
+              <div className="description">
 
                 <ShowMoreText
                   /* Default options */
@@ -51,30 +52,24 @@ class PodcastDetail extends Component {
                   expanded={false}
 
                 >
-                  Lorem ipsum dolor sit amet, consectetur <a href="https://www.yahoo.com/" target="_blank">yahoo.com</a> adipiscing elit, sed do eiusmod tempor incididunt
-                <a href="https://www.google.bg/" title="Google" rel="nofollow" target="_blank">www.google.bg</a> ut labore et dolore magna amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  Lorem ipsum dolor sit amet, conse cte tuisnr <a href="https://www.yahoo.com/" target="_blank">yahoo</a> adihhgp is ci ng elit, sed do eiu smd tem por inci d idjshgdhj hithfun
+                <a href="https://www.google.bg/" title="Google" rel="nofollow" target="_blank"> google</a> ut la bore et dolo re mag hfaamet, con sec tetur adipiscing elit,
+                sed do eiustit sugfrmod tempor incididunt ut labore et dolore mag istena aliqua. Utsrt enim ad
+                minim veniam, quis nos dtatrud exercitation ullamco laboris nisi
+                ut aliquip e Loremisgt ipsum dolor sit amet, consectetur
+                adipisc elitsagfg, sed do eiusmod tempor incididunt ut 
 
 
-                et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                
             </ShowMoreText>
               </div>
 
               <div className="d-flex flex-column forMobile ">
                 <div className="ml-4 mt-2 heading"> Episodes</div>
-                
-
                 {this.episodes.map(episode => (
-                  <div className="White secondEpi" >
+                  <div className="White secondEpi" data-id={episode.id}  onClick={(e)=> this.props.passisClicked(e.currentTarget.dataset.id)}>
                     <i className="far fa-play-circle ml-3 mt-3 mr-5" style={{fontSize:"1.5rem",color:"red",position:"absolute"}} ></i>
-                    <div className="ml-4">
+                    <div className="ml-4" >
                     <div className=" Epititle ">{episode.titlle}</div>
                     <div className=" date" >{episode.addedOn}</div>
                     <div className=" duration">{episode.duration}</div>
