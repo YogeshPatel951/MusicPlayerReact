@@ -51,7 +51,7 @@ class PodcastDetail extends Component {
 
           <div className="shadow">
             <div className="down">
-              <div className="description">
+              <div className="description" style={{paddingRight:"2rem",lineHeight:"20px",fontWeight:"lighter",fontSize:"15px",color:"white"}}>
 
                 <ShowMoreText
                   /* Default options */
@@ -60,7 +60,8 @@ class PodcastDetail extends Component {
                   less=' Less'
                   anchorClass='showMore White'
                   expanded={false}
-
+                
+                
                 >
                   Lorem ipsum dolor sit amet, conse cte tuisnr <a href="https://www.yahoo.com/" target="_blank">yahoo</a> adihhgp is ci ng elit, sed do eiu smd tem por inci d idjshgdhj hithfun
                 <a href="https://www.google.bg/" title="Google" rel="nofollow" target="_blank"> google</a> ut la bore et dolo re mag hfaamet, con sec tetur adipiscing elit,
@@ -75,16 +76,20 @@ class PodcastDetail extends Component {
               </div>
 
               <div className="d-flex flex-column forMobile ">
-                <div className="ml-4 mt-2 heading"> Episodes</div>
+                <div className="ml-4 mt-3 mb-0 pb-0 heading" style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"200",color:"rgba(255,255,255,0.8)"}}> EPISODES</div>
                 {this.episodes.map(episode => (
                   <div className="White secondEpi" data-id={episode.id} id={episode.id}  onClick={(e)=> this.isClicked(e.currentTarget.dataset.id) }>
                     {this.state.changeIcon && (this.state.playIcon===document.getElementById(episode.id).getAttribute('data-id'))  ?( <i class="far fa-pause-circle ml-3 mt-3 mr-5" style={{fontSize:"1.5rem",color:"red",position:"absolute"}}></i> )
                     :( <i className="far fa-play-circle ml-3 mt-3 mr-5" style={{fontSize:"1.5rem",color:"red",position:"absolute"}} ></i>)}
+                    
                     <div className="ml-4" >
-                    <div className=" Epititle ">{episode.titlle}</div>
+                    <i class="fas fa-download" style={{fontSize:"1.5rem",color:"red",position:"absolute",right:"0",marginRight:"2.5rem",marginTop:"0.65rem"}}></i>
+                    <div className=" Epititle " style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"200",fontSize:"15px"}}>{episode.titlle}</div>
                     <div className=" date" >{episode.addedOn}</div>
-                    <div className=" duration">{episode.duration}</div>
+                    <div className=" duration" style={{fontFamily:"Open Sans Condensed",letterSpacing:"1px",fontWeight:"lighter"}}>{episode.duration}</div>
                     </div>
+
+                    
                   </div>
                 ))}
 

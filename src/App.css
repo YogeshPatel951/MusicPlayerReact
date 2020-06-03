@@ -63,10 +63,10 @@ body {
 }
 
 .fsize {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 2PX;
+    font-size: 10px;
+    letter-spacing: 1PX;
     word-spacing: 2px;
+    color: "white" !important;
 }
 
 .roundAcc {
@@ -74,15 +74,14 @@ body {
     height: 40px;
     border-radius: 0 125px 125px 0;
     text-align: center;
-    
-    background-color: rgb(204, 181, 181);
+    background-color: rgb(187, 187, 187);
 }
 
 .cancelButton {
     margin-top: 50px !important;
     background-color: rgba(214, 32, 32, 0.938) !important;
     width: 30%;
-   height: 50px;
+    height: 50px;
     margin: auto;
     border-radius: 600px !important;
     margin-bottom: 50px !important;
@@ -131,7 +130,7 @@ body {
         width: 40% !important;
     }
     .fsize {
-        font-size: 18px !important;
+        font-size: 15px !important;
     }
     .roundback {
         margin: auto;
@@ -182,8 +181,8 @@ body {
     .subText {
         width: 300px !important;
     }
-   
 }
+
 @media(min-width:400px) and (max-width:470px) {
     .subCenter {
         margin-top: 320px !important;
@@ -193,6 +192,7 @@ body {
         width: 300px !important;
     }
 }
+
 html {
     height: 100%;
     margin: 0;
@@ -215,7 +215,7 @@ body {
 
 .subCenter {
     margin: auto;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 .backSub {
@@ -234,7 +234,7 @@ body {
 }
 
 .subTextSize {
-    font-size: 18px;
+    font-size: 15px;
     padding-top: 10px;
     padding-left: 40px;
 }
@@ -242,7 +242,7 @@ body {
 .subDesc {
     padding-bottom: 10px;
     padding-left: 40px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .forShadow {
@@ -294,30 +294,32 @@ body {
         padding-bottom: 0% !important;
         width: 10%;
     }
-    .subCenter{
+    .subCenter {
         margin-top: 200px !important;
     }
 }
-@media(max-width:362px){
-    .accBlock{
+
+@media(max-width:362px) {
+    .accBlock {
         height: 70px;
         padding-top: 0px;
     }
-    .cancelButton{
+    .cancelButton {
         height: 40px;
         margin-top: 20px !important;
     }
 }
-@media(min-width:365px) and (max-width:386px){
-    .accBlock{
+
+@media(min-width:365px) and (max-width:386px) {
+    .accBlock {
         height: 100px;
         padding-top: 10px;
     }
-    .cancelButton{
+    .cancelButton {
         height: 50px;
-      
     }
 }
-.myAcc{
+
+.myAcc {
     margin-top: 100px !important;
 }

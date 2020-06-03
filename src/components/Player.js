@@ -194,7 +194,7 @@ class Player extends Component {
                             </div>
                         </div>
                         <div className="col-xs-3 ali" style={{ textAlign: "right" }} onClick={this.PlayOrPause}>
-                            <i className={this.state.isplaying ? "fas fa-pause-circle" : "fas fa-play-circle"} style={{ fontSize: "2.9rem", marginTop: "0.1rem", marginRight: "10px", color: "red",borderRadius:"100%", overflow: "hidden" , backgroundColor:"#fff"}}></i>
+                            <i className={this.state.isplaying ? "fas fa-pause-circle" : "fas fa-play-circle"} style={{ fontSize: "2.9rem", marginTop: "0.15rem", marginRight: "10px", color: "red",borderRadius:"100%", overflow: "hidden" , backgroundColor:"#fff", border:"1px solid red",padding:"-1px",boxShadow:"inset 0px 3px 10px red ,inset 0px -3px 10px red "}}></i>
                         </div>
                     </div>
                 </div>

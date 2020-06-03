@@ -15,9 +15,9 @@ const CastofWeek = ({ data , passData}) => {
   return (
     <div className="pb-4">
 
-      <div className='h4 al pl-3 pb-4 pt-0 mt-0 White'>GAMECAST OF TH WEEK</div>
+      <div className='h4 al pl-3 pb-4 pt-0 mt-0 White' style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"200"}}>GAMECAST OF TH WEEK</div>
 
-      <div className="container-fluid  hei mb-5  ">
+      <div className="container-fluid  hei mb-2  pb-1">
         <div className="row ">
           <Link to="/podcast">
             <img className="img-fluid week" src="images/a.png" onClick={handleClick}/>
@@ -27,9 +27,9 @@ const CastofWeek = ({ data , passData}) => {
             {data.map(epi => (
 
               <p className="eplist White  " key={epi.key}>
-                
+      
                 <i class="far fa-play-circle ml-1 mr-3" style={{fontSize:"1.3rem",color:"red"}} key={epi.key}></i>
-                {epi.Name}<br />
+                <span style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"light"}}>{epi.Name}</span><br />
                 <span className=" small  time" key={epi.key}>{epi.time}</span></p>
             ))}
 
