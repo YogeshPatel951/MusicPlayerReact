@@ -8,7 +8,7 @@ import Navbar from './components/NavBar'
 import Player from './components/Player'
 import PodcastDetail from './components/PodcastDetail'
 import Home from './components/Home'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {  BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import podcast from './podcast';
 import MList from './data.json'
 import bg from "./components/Background.png";

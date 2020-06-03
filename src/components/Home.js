@@ -9,7 +9,12 @@ import { Link } from 'react-router-dom'
 import Navbar from './NavBar'
 const Home = (props) => {
   const [alertStatus, SetalertStatus] = useState(true);
-  const [warning, Setwarning] = useState(false);
+  const [Setwarning] = useState(false);
+  var [warning] = useState(false);
+  if(props.location.state != undefined){
+     warning = props.location.state.warning;
+  }
+   
   const [gotKey, setgotKey] = useState(0);
   
   function CloseAlert() {
@@ -23,13 +28,14 @@ const Home = (props) => {
     <div className="wid">
       <Navbar />
       {alertStatus == true ? (
-        <Container className="alertmsg mt-1 mb-4" style={{ backgroundColor: warning ? "rgba(255,50,12,0.5)" : "aqua" }}>
+        <Container className="alertmsg mt-1 mb-4" style={{ backgroundColor: warning ? "rgba(255,50,12,0.8)" : "aqua" }}>
           <button className="btn closeIcon" onClick={CloseAlert}><i class="fas fa-times"></i></button>
           {warning ? (
             <>
               <div className=' alertTitle h3' style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"300"}}>WARNING</div>
               <div className="d-flex flex-row">
-                <div className="alertIcon   h2">!</div>
+              <img className="mt-4 mr-3 ml-2 alertIcon" style={{width:"50px",height:"50px"}} src="images/important_message.png"></img>
+              {/* <i className="fas fa-exclamation h1 mr-5 ml-2 mt-4 alertIcon" style={{fontSize:"3.5rem"}}></i> */}
                 <Col>
                   <div className="message "> Warning husduif usd fusuif iud fiu sad asda as das ds ad ad sa ds gf</div>
                 </Col>
@@ -37,7 +43,7 @@ const Home = (props) => {
             </>
           ) : (
               <>
-                <div className=' alertTitle h3' style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"400"}}>SUCCESS</div>
+                <div className=' alertTitle h3' style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"300"}}>SUCCESS</div>
                 <div className="d-flex flex-row">
                 <i className="far fa-check-square h1 mr-5 ml-2 mt-4 alertIcon" style={{fontSize:"3.5rem"}}></i>
                 

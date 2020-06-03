@@ -44,6 +44,12 @@ const MyAccount = () => {
           </Link >
         </button>
 
+        <button type="button" className=" btn   cancelButton White" /* onClick={gotoHome} */>
+          <Link to="/subscribe" className="White ">
+            <span className="cancelWidht"> Subscribe Page Link</span>
+          </Link >
+        </button>
+
 
       </div>
     </div>
