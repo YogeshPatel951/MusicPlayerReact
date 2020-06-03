@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
+import { Link } from 'react-router-dom';
 const Subscription = () => {
   return (
     <div className="backimage ">
@@ -10,7 +11,14 @@ const Subscription = () => {
       <div className="d-flex flex-column mt-0" style={{fontFamily:"M PLUS Rounded 1c",fontWeight:"400"}}>
 
         <div className=" subCenter backSub mb-3" >
+          <Link to={{
+            pathname: '/',
+            state: {
+              warning: true
+            }
+          }}>
           <button className="btn " type="button"><span className="White">SUBSCRIBE NOW</span></button>
+          </Link>
         </div>
 
         <div className="White subText mb-3">
