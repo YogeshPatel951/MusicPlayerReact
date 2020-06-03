@@ -1,0 +1,220 @@
+@media screen and (min-width: 300px) and (max-width:450px) {
+    .forMobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description {
+        width: 100% !important;
+        margin-right: 4% !important;
+    }
+    .img-wrap {
+        width: 100% !important;
+        height: 100px;
+        border: 1px solid black;
+        display: inline-block;
+        margin-right: 5% !important;
+    }
+    .img-wrap>img {
+        position: static !important;
+        margin-top: -15px;
+        top: 50%;
+        height: auto;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img-wrap {
+        width: 100%;
+        height: 25%;
+        position: relative;
+        padding: 0%;
+    }
+    .img-wrap>img {
+        margin-top: -15px;
+        top: 50%;
+        height: auto;
+        width: 100%;
+    }
+    .shadow {
+        width: auto;
+        height: 500px;
+        z-index: 5;
+        opacity: 1;
+        position: relative;
+        min-height: 100px;
+        background-color: rgba(44, 41, 57, 1);
+        box-shadow: 0px -20px 60px 70px rgba(44, 41, 57, 1), 0px 10px 50px rgba(44, 41, 57, 1) inset !important;
+    }
+    .shadow::after {
+        box-shadow: inset 0px 0px 0px white;
+    }
+    .secondEpi {
+        margin: auto;
+        width: 90%;
+        background-color: rgba(66, 78, 78, 0.54);
+        margin-top: 4%;
+    }
+    .duration {
+        padding-top: 0px;
+        margin-left: 35px;
+        margin-top: 0px;
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+    .date {
+        margin-left: 35px;
+        font-size: small !important;
+        color: rgb(135, 138, 138);
+    }
+    .down {
+        z-index: 52;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        top: 0;
+        text-align: left;
+        color: wheat;
+        width: 100%;
+    }
+    .description {
+        padding: 0px 10px 0px 10px;
+        color: wheat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-left: 6%;
+        width: 90%;
+    }
+    .SecondEpiCont {
+        margin: auto;
+    }
+    .Epititle {
+        margin-top: 5px;
+        font-size: 18px;
+        margin-left: 35px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .img-wrap {
+        margin-top: 4% !important;
+        width: 20%;
+        margin: auto;
+        height: 5% !important;
+        position: relative;
+        padding: 0%;
+        margin-bottom: 20px;
+    }
+    .img-wrap>img {
+        position: static !important;
+        margin-top: -15px;
+        top: 50%;
+        height: auto;
+        width: 100%;
+    }
+    .shadow {
+        margin: auto;
+        width: 90;
+        height: 500px;
+        z-index: 5;
+        opacity: 1;
+        position: relative;
+        min-height: 100px;
+        background-color: rgba(44, 41, 57, 1);
+        box-shadow: 0px -20px 50px 70px rgba(44, 41, 57, 1), 0px 10px 50px rgba(44, 41, 57, 1) inset !important;
+    }
+    .secondEpi {
+        margin: auto;
+        width: 600px;
+        background-color: rgba(66, 78, 78, 0.54);
+        margin-top: 1%;
+        overflow-y: auto;
+        border-radius: 5px;
+    }
+    .duration {
+        padding-top: 0px;
+        margin-left: 35px;
+        margin-top: 0px;
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    .date {
+        margin-left: 35px;
+        font-size: small !important;
+        color: rgb(135, 138, 138);
+    }
+    .down {
+        z-index: 52;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        top: 0;
+        text-align: left;
+        color: wheat;
+        width: 100%;
+    }
+    .description {
+        padding: 0px 10px 0px 10px;
+        color: wheat;
+        font-size: 100%;
+        font-weight: 200;
+        line-height: 18px;
+        padding-bottom: 0% !important;
+        margin-bottom: 0% !important;
+    }
+    .SecondEpiCont {
+        margin: auto;
+    }
+    .Epititle {
+        margin-top: 5px;
+        font-size: 18px;
+        margin-left: 35px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .forOpacity {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.6;
+    }
+    .heading {
+        font-size: xx-large;
+        margin-left: 30% !important;
+    }
+    .overFlowoff::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.showMore {
+    background-color: darkgray;
+    border-radius: 10px;
+    padding-top: 0.2%;
+    padding-left: 1.5%;
+    padding-right: 1.8%;
+    padding-bottom: 0.7%;
+    font-size: 80%;
+}
+
+.backButton {
+    margin-right: auto;
+    margin-top: 0.5%;
+    padding: 0.8%;
+    margin-left: 0.5%;
+    background-color: white;
+    border: saddlebrown 1px solid;
+}
