@@ -1,18 +1,17 @@
 [
-    {
-        "key=": 1,
-        "Name": "Episode27-Rip TI 10",
-        "time": "1:4:10"
-    },
-    {
-        "key=": 2,
-        "Name": "Episode27-Rip TI 10",
-        "time": "1:4:10"
-    },
-    {
-        "key=": 3,
-        "Name": "Episode27-Rip TI 10",
-        "time": "1:4:10"
-    }
-    
+  {
+    "key": 1,
+    "Name": "Episode27-Rip TI 10",
+    "time": "1:4:10"
+  },
+  {
+    "key": 2,
+    "Name": "Episode27-Rip TI 10",
+    "time": "1:4:10"
+  },
+  {
+    "key": 3,
+    "Name": "Episode27-Rip TI 10",
+    "time": "1:4:10"
+  }
 ]
